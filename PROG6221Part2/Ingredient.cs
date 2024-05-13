@@ -13,5 +13,15 @@ namespace PROG6221Part2
         public string Unit { get; set; } //Unit of measurement for the ingredient
         public int Calories { get; set; } //Amount of calories
         public string FoodGroup { get; set; } //Type of food group
+
+        public Ingredient(string name, double quantity, string unit, int calories, string foodgroup)
+        {
+            Name = name;
+            Quantity = quantity;
+            Unit = unit;
+            Calories = calories;
+            FoodGroup = foodgroup;  
+
+        }
     }
 }

@@ -6,13 +6,25 @@ namespace PROG6221Part2
     class Program
     {
         //Main
+        static List<Recipe> recipes = new List<Recipe>();
+
         static void Main(string[] args)
         {
-            //Infinite loop that will continously add recipes
             while (true)
             {
-                //Create a new recipe object
-                Recipe recipe = new Recipe();
+                Console.WriteLine("\u001b[35m\nRecipe Book:");
+                Console.WriteLine("---------------------------------");
+                Console.WriteLine("1. Enter a new recipe ");
+                Console.WriteLine("2. Display all recipes");
+                Console.WriteLine("3. Display a recipe");
+                Console.WriteLine("4. Scale your reccipe");
+                Console.WriteLine("5. Clear all recipe");
+                Console.WriteLine("6. Close Program");
+                Console.WriteLine("---------------------------------");
+
+                Console.WriteLine("Enter your choice: ");
+                Console.WriteLine("---------------------------------");
+                int choice = int.Parse(Console.ReadLine());
 
                 //Prompt the user to enter the name of the recipe
                 Console.WriteLine("Enter the name of the recipe: ");
