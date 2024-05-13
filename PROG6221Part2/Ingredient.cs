@@ -26,7 +26,7 @@ namespace PROG6221Part2
         }
         public override string ToString()
         {
-            // Constructs a string with the quantity, unit, name, and calories of the ingredient.
+            // Constructs a string with the quantity, unit, name, and calories of the ingredient
             return $"{Quantity} {Unit} of {Name} ({Calories} calories)";
         }
     }
