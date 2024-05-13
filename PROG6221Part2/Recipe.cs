@@ -9,15 +9,17 @@ namespace PROG6221Part2
 {
     class Recipe
     {
-        public string Name { get; set; } //Name of the recipe
-        public Ingredient[] Ingredients { get; set; } //Array of Ingredients
-        public string[] Steps { get; set; } //Array of Steps for the ingredients
+        public string Name { get; set; } //Name of recipe
+        public List<Ingredient> Ingredients { get; set; } //List of ingredients
+        public List<string> Steps { get; set; } //List of steps 
         public double[] OriginalQuantities { get; set; } //Array to store original quantities of ingredients
 
-        public Recipe()
+        public Recipe(string name)
         {
-            Ingredients = new Ingredient[0]; //This initializes the Ingredients array with the size of zero
-            Steps = new string[0]; //This initializes the Steps array with the size of zero
+            Name = name;
+            Ingredients = new List<Ingredient>();
+            Steps = new List<string>();
+
         }
     }
 }
